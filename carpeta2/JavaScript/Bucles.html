@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Bucle For
+
+        for(let i = 0; i < 10;i++){//i=i+1==i++== i+1
+            console.log("el valor de i es",i);
+        }
+        for(let i = 0; i < 10;i++){//i=10
+            console.log("el valor de i es",i);
+        }
+        var numeros_pares=[2,4,6,8,10];
+
+        /*numeros-pares [numeros_pares.length-1]
+        numeros_pares [5-1];
+        numeros_pares [4];*/
+        
+        for (let i = 0; i < numeros_pares.length; i++) {//i=1
+            console.log("La posicion es",i);
+            console.log("El elemento es",numeros_pares[i]);
+            console.log("");
+        }
+        var valor = 0;
+        for (let i = 0; i< numeros_pares.length; i++) {
+            const element = numeros_pares[i];
+            console.log("la posicion: "+i+ ",tiene el elemento:"+valor)
+        }
+        console.log("element",valor);
+
+        //var: Para la creacion de variables globales (Todo el codigo)
+        //let: Solo para bloques especificos
+        //const: Bloques especificos, pero se recomienda para estableces variables constantes
+
+        var suma_pares = 0; //6
+        //Variables acumuladores
+        //Varisble = variable + algo;
+        for(let i=0; i< numeros_pares.length;i++){ //1
+            suma_pares = suma_pares + numeros_pares[i];
+            //suma_pares= 2 + numeros_pares[1];
+            //suma_pares= 2 + 4;
+            //suma_pares= 6;
+            console-log("suma parcial",suma_pares);
+        }
+            console.log("suma total",suma_pares)
+        
+    </script>
+</body>
+</html>

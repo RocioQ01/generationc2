@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*Arreglos(Arrays)*/
+    //Variable con mas variables
+    //Varias cakitas dentro de corchetes
+    //Contenedor de variables
+    //Conjunto de datos agrupados en una variable, como una matriz
+    //Es un estante que se puede utilizar en 2d o 3d
+    //Lista de elementos, que se puede tener distintos tipos de datos
+    //Muchos objetos en una sola caja
+
+    //(Profe) Conjunto de datos, ordenados segun su ingreso, separados por coma
+    //TODOS los arreglos comienzan en la posicion cero (0)
+    //Arreglos= Tamaño predefenido, no puede cambiar
+    //Lista= Tamaño dinamico
+
+    var vocales = ["a","u","i","e","o"];
+    //Tiene cinco elementos, el ultimo esta en la posicion cuatro
+    //El primero en la poscion cero
+
+    console.log(vocales);
+    //Length -> Cantidad de elementos o tamaño del arreglo
+    console.log(vocales[0],vocales[1],vocales[2],vocales[3],vocales[4],vocales[5])
+    console.log(vocales[-1])
+    console.log(vocales[2*2])
+    console.log(vocales[12/6])
+
+    //Re escribiendo datos, en una posicion especifica
+    vocales[1] = "y";
+    console.log(vocales)
+
+    //Push, agrega un dato al final
+    vocales.push("i");
+    console.log(vocales);
+
+    //Pop, elimina el utlimo dato
+    vocales.pop();
+    console.log(vocales);
+
+    vocales.pop();
+    vocales.pop();
+    vocales.pop();
+    vocales.pop();
+    vocales.pop();
+    console.log(vocales);
+
+    var arreglo1 = []; //Arreglo vacio
+    //El tamaño es CERO (Nunca null)
+    console.log(arreglo1.length)
+    arreglo1.push(1);
+    arreglo1.push(8);
+    var ultimo = arreglo1.pop();
+    console.log(ultimo) //Imprime el "8"
+
+    //Muestra la posicion
+    vocales = "aeiou";
+    console.log(vocales);
+    console.log(vocales[3])
+
+    /*Practica*/
+    var Lulu = ("Hola Mundo");
+    console.log(Lulu[6])
+    /*Practica*/
+
+    var arreglos1=["asf",123,true, null,[1,2,3]];
+
+    </script>
+</body>
+</html>

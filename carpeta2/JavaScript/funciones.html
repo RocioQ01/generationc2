@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+    /*Funciones*/
+    // Trozo de codigo, que solo se ejecutara cuan sea llamada
+    //Realiza una accion especifica
+        //nombre_funcion();
+
+        function ejemplo(){
+            console.log("Estoy dentro de la funcion");
+        }
+        ejemplo();
+
+        function imprimir(cantidad){//cantidad = 3
+        console.log("parametro",cantidad);
+    }
+        imprimir(3); //No es necesario que sean numeros.
+        imprimir([1,2,3,4])
+        //console.log(cantidad);
+
+        var numero_impar=1
+        function imprimirImpar(impar){
+            console.log("impar",impar);
+            console.log("numero_impar",numero_impar);
+            numero_impar=3; //Sobre escritura
+        }
+        imprimirImpar(numero_impar); //imprimirImpar(1)
+            console.log("nuevo numero_impar",numero_impar);
+
+        //Retorno
+        function sumaNumeros(){
+            console.log(numero_impar+4);//console.log(3+4)
+            return numero_impar+4;//return 7;
+        }
+        var numeroRetornado = sumaNumeros();//Llamado a la funcion
+        //var numeroRetornado = 7;
+            console.log("numero retornado",numeroRetornado);
+
+        function sumaImpar(){
+            return 3+5;//return 8;
+        }
+        var impares = sumaImpar();
+        console.log("suma impares",impares) //8
+        console.clear();
+
+        function multiplacion(numero1, numero2){
+            return numero1*numero2; //Devolver un valor
+        }
+
+        var resultadoMultiplacion=multiplacion(34,76);
+        console.log("El resultado es",resultadoMultiplacion);
+
+
+        function crearNuevoArreglo(numero){
+            var arreglo = [];//[0,1,2]
+            for(let i=0; i <= numero;i++){
+                arreglo.push(i);
+            }
+            return arreglo;
+        }
+        var numeroIngresado= prompt("ingresa un numero",0);
+        var miArreglo = crearNuevoArreglo(numeroIngresado);
+        console.log("mi arreglo",miArreglo);
+
+
+    </script>
+</body>
+</html>
