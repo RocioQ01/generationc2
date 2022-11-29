@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--Etiquetas--> <!--for="" es un atributo-->
+    <!--Ingresa informacion, tipo: texto-->
+    <!--Id debe ser unico para la pagina, identificador unico. Se trabaja con JS y CSS-->
+    <!--name="" debe ser representativo-->
+    <!--El nombre que se asigna se muestra en el backend se debe entender, que sea unico-->
+    <label for="nombre">Ingrese nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan">
+    <br>
+    <br>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" placeholder="Ej: Alvarez">
+    <br>
+    <br>
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" name="correo" placeholder="Ej: j@a.cl">
+    <br>
+    <br>
+    <label for="">Contraseña:</label>
+    <input type="email" id="pass" name="pass" placeholder="Ingrese contraseña">
+    <br><hr>
+
+    <!--Radio button-->
+    <!--En name debe ir lo mismo-->
+    <h2>Radio buttons</h2>
+    <label for="femenino">Femenino</label>
+    <input type="radio" id="femenino" name="sexo" value="femenino">
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="masculino" name="sexo" value="masculino"> 
+    <label for="pdn">Prefiero no decir</label>
+    <input type="radio" id="pdn" name="sexo" value="pdn">
+    <br><hr>
+
+    <!--Select o combobox, selecciona una y se queda asi xd-->
+    <!--Con el "multiple" se pueden seleccionar mas de una opcion-->
+    <h2>Selectores</h2>
+    <select name="sexo2" id="sexo2">
+        <option value="=">Seleccione su sexo</option>
+        <option value="femenino">Femenino</option>
+        <option value="masculino">Masculino</option>
+        <option value="pnd">Prefiero no decir</option>
+    </select>
+    <br><hr>
+
+    <!--Checkboxes, nos permite seleccionar mas de una opcion o ninguna-->
+    <h2>Checkboxes</h2>
+    <input type="checkbox" id="lunes" name="semana" value="lunes">
+    <label for="lunes">Lunes</label><br>
+    <input type="checkbox" id="martes" name="semana" value="martes">
+    <label for="martes">Martes</label><br>
+    <input type="checkbox" id="miercoles" name="semana" value="miercoles">
+    <label for="miercoles">Miercoles</label><br>
+    <input type="checkbox" id="jueves" name="semana" value="jueves">
+    <label for="jueves">Jueves</label><br>
+    <input type="checkbox" id="viernes" name="semana" value="viernes">
+    <label for="viernes">Viernes</label>
+    <br><hr>
+
+    <!--Textarea-->
+    <textarea id="descripcion" name="descripcion" rows="8" cols="50"></textarea>
+    <br><hr>
+    
+    <!--Hidden cuadro oculto-->
+    <input type="hidden" id="" name="">
+    <br><hr>
+
+    <!--Botones o buttons--> <!--Submit-->
+    <h2>Botones</h2>
+    <input type="button" value="Aceptar" onclick="alert('Hola!!')">
+    <input type="submit" value="Enviar">
+
+</body>
+</html>
