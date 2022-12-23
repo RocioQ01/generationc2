@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+<style>
+    .container{
+        background-color: indianred;
+        height: 400px;
+    }
+    .divclass{
+        width: 20%;
+        height: 20%;
+        display: inline-block;
+    }
+    #div1{
+        background-color: coral;
+    }
+    #div2{
+        background-color: aquamarine;
+    }
+    #div3{
+        background-color: yellowgreen;
+    }
+    /*Celular*/
+    @media screen and (max-width: 480px) {
+        .divclass{
+            width: 80%;
+            height: 80%;
+            display: inline-block;
+            background-color: cadetblue !important; /*Prioriza este color al achicarse la pagina (!important)*/
+        }
+    }
+    /*Tablet*/
+    @media screen and (min-width: 481px) and (max-width: 1023px){
+        .divclass{
+            width: 50%;
+            /*height: 50%;*/
+            display: inline-block;
+            font-size: xx-large;
+        }
+    }
+    /*Desktop*/
+    @media screen and (min-width: 1024px){
+
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div id="div1" class="divclass"><p>Bloque 1</p></div>
+        <div id="div2" class="divclass"><p>Bloque 2</p></div>
+        <div id="div3" class="divclass"><p>Bloque 3</p></div>
+    </div>
+</body>
+</html>

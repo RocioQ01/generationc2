@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos CSS</title>
+    <style>
+        *{/*elminar las distanciaas entre los elementos*/
+            margin: 0px;
+            padding: 0px;
+        }
+        /*3 formas de asignar estilos*/
+        /*1.- a traves del elemento(etiqueta),
+        le da estilo a TODOS los elementos*/
+        p{
+            color:blue;
+            background-color: darkseagreen;
+        }
+        div{
+            color: aqua;
+            background-color: orangered;
+            width: 200px;/*ancho*/
+            height: 200px;/*alto*/
+        }
+        a{
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 25px;/*Tamaño de la letra*/ /*blond*/
+            font-family: Verdana, Geneva, Tahoma, sans-serif;/*Estilo de letra*/
+        }
+        /*2.- a traves de las clases(.), se
+        le puede dar estilo a uno o mas elementos*/
+        .parrafo23{
+            color: lightcoral; /*!important*/
+            background-color: mediumturquoise;
+        }
+        
+        /*3.-A traves del id #
+        el estilo solo se aplica a un elemento*/
+        #parrafo4{
+            color: #b6e5fb;/*Color de parrafo*/
+            background-color: aquamarine; /*Color de fondo*/
+        }
+        #padre{
+            background-color: lavender;
+            width: 400px;
+            height: 400px;
+            border: 1px solid lavender;
+        }
+        #hijo{/*Ojo izquierdo*/
+            background-color: black;
+            width: 40px;
+            height: 40px;
+            margin: 100px;
+        }
+        #hijo1{/*Boca*/
+            background-color: black;
+            width: 40px;
+            height: 40px;
+            margin-inline-start: 100px; /*Centrar*/
+            padding-left: 150px;
+        }
+        #hijo2{/*Ojo derecho*/
+            background-color: black;
+            width: 40px;
+            height: 40px;
+            margin: 250px;
+            margin-top: -178px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Parrafo 1</p>
+        <p class="parrafo23">Parrafo 2</p>
+        <p class="parrafo23">Parrafo 3</p>
+        <p class="parrafo23" id="parrafo4">Parrafo 4</p>
+        <a href="http://www.sii.cl">visite sii</a>
+    </div>
+    <br> 
+    <h2>Margin y padding</h2>
+    <!--El margin es la distancia que tiene entre las paredes-->
+    <!--Todos los elementos parten desde la izquierda-->
+    <div id="padre">
+        <div id="hijo"></div>
+        <div id="hijo1"></div>
+        <div id="hijo2"></div>
+    </div>
+    
+</body>
+</html>
